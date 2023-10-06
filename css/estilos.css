@@ -7,7 +7,11 @@
     box-sizing: border-box;
 }
 
+
+
+
 .cabecera{ /*header*/
+    width: 100vh;
     background-color: #333333; /* Fondo */
     color: #F5F5DC; /* Texto y elementos de navegación */
     .contenedorLogo{
@@ -16,6 +20,13 @@
             width: 125px;
         }
     }
+    .vistaEscritorio{
+        display: block;
+     }
+    .vistaMobile{
+        display: none;
+    }
+    
     .listaNav{/*ul*/
         text-align: right;
         font-style: none;
@@ -60,6 +71,16 @@
         }
 
 
+    .footer{
+            display: flex;
+            flex-direction: row;
+            font-size: 0.8rem;
+            bottom: 0;
+            background-color: #333333; /* Fondo */
+            color: #F5F5DC; /* Texto y enlaces */
+     }
+
+
  .titulo{
     display: inline-block;
 
@@ -90,4 +111,16 @@
     bottom: 0;
     background-color: #333333; /* Fondo */
     color: #F5F5DC; /* Texto y enlaces */
+}
+
+
+
+@media screen and (max-width: 768px){
+    .vistaEscritorio{
+        display: none;
+    }
+    .vistaMobile{
+        display: flex;
+        flex-direction: column;
+    }
 }

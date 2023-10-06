@@ -1,0 +1,165 @@
+/*fuente de la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;800&family=Hind+Vadodara:wght@400;700&family=Neuton:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 3rem;
+    color: #F5DEB3;
+ }
+
+ .subtitulo{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 2rem;
+    color: #F5DEB3;
+ }
+
+ .parrafo{
+    margin: 30px;
+    font-family: 'Neuton', serif;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: #F5DEB3;
+ }
+
+
+
+.cabecera{ /*header*/
+    width: 100%;
+    background-color: #333333; /* Fondo */
+    color: #F5F5DC; /* Texto y elementos de navegación */
+    .contenedorLogo{
+        padding-left: 20px;
+        .escudo{
+            width: 125px;
+        }
+     .listaNav{/*ul*/
+            text-align: right;
+            font-style: none;
+            .listaItem{/*li*/
+                display: inline-block;
+                .nav{/*a*/
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                    margin-right: 20px;
+                }
+            }
+         }
+    }
+    .vistaEscritorio{
+        display: block;
+     }
+    .vistaMobile{
+        display: none;
+    }
+}  
+
+.main{
+    background-color: #556B2F;
+    .primera{
+        height: 100vh;  
+    }
+    
+    .colorFondo{
+        background-color: black;
+    }
+    
+
+    .introduccion{
+        background-image: url(../assets/img/formacion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px;
+        position: relative;
+    }
+    .titulo{
+        margin-top: 20px;
+        
+    }
+    .parrafo{
+        margin-top: 200px;
+        
+    }
+    .finalidad{
+       margin: 20px;
+    }
+    .pfinalidad{
+        margin: 20px;
+    }
+    .estrategia{
+        background-size: cover;
+        padding-left: 90px;
+    }
+    .Narma{
+        background-size: cover;
+        padding-right: 90px;
+    }
+    .hArma{
+        margin-top: 20px;
+    }
+    
+    .ol{
+        margin: 20px;
+    }
+    .bandera{
+        background-size: cover;
+        padding-left: 90px;
+    }
+    .final{
+        margin-top: 150px;
+    }
+    .boton{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        background-color: #8B4513;
+        color: #fff; /* Color del texto */
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        outline: none;
+        list-style: none;
+    }
+    .entrada2{
+        background-size: cover;
+    }
+
+.main .introduccion::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    z-index: 1;
+}
+}
+
+.pie{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    bottom: 0;
+    background-color: #333333; /* Fondo */
+    color: #F5F5DC; 
+    .iconos{
+        display: inline-block;;
+        width: 80%; 
+        height: 80%;
+        margin: 10px;
+        margin-top: 30px;
+        position: relative; 
+    }
+}

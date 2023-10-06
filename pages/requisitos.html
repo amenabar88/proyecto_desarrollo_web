@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requisitos</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/444d110d46.js" crossorigin="anonymous"></script>
     <link rel="icon" type="png" href="../favicon.ico.png">
 </head>
 <body>
@@ -15,15 +16,58 @@
                 <img class="escudo" src="../assets/img/b_ing_m_6.png" alt="Logo">
             </a>
        </div>
-        <nav>
-            <ul class="listaNav">
-                <li  class="listaItem"><a class="nav" href="../index.html">Inicio</a></li>
-                <li  class="listaItem"><a class="nav" href="../pages/nosotros.html">Nosotros</a></li>
-                <li  class="listaItem"><a class="nav" href="#">Requisitos</a></li>
-                <li  class="listaItem"><a class="nav" href="../pages/inscripciones.html">Inscripciones</a></li>
-                <li  class="listaItem"><a class="nav" href="../pages/contacto.html">Contacto</a></li>
+       <nav class="navbar navbar-dark bg-dark fixed-top vistaMobile">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-dark">
+            <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/requisitos.html">Requisitos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/inscripciones.html">Inscripciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>  
     </header>
     <main class="main">
         <section>
