@@ -10,74 +10,44 @@
     <link rel="icon" type="png" href="favicon.ico.png">
 </head>
 <body>
-    <header class="cabecera d-flex">  
+  <header class="cabecera d-flex">  
         <div class="contenedorLogo">
             <a href="#">
                 <img class="escudo" src="./assets/img/b_ing_m_6.png" alt="Logo">
             </a>
         </div>
-        <nav class="navbar navbar-dark bg-dark fixed-top vistaMobile">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    </li>
-                  </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">B Ing M 6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./pages/requisitos.html">Requisitos</a>
+                <a class="nav-link" href="./pages/inscripciones.html">Inscripciones</a>
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
               </div>
             </div>
-          </nav>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          </div>
+        </nav>
+  </header>
+  <main class="main">
+    <div class="primera">
+      <section class="d-flex">
+        <div class="introduccion colorFondo">
+            <h1 class="titulo text-center">Servicio Militar Voluntario</h1>
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse navbar-dark">
-                <ul class="navbar-nav w-100 justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/requisitos.html">Requisitos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/inscripciones.html">Inscripciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>    
-    </header>
-    <main class="main">
-        <section class="primera d-flex">
-            <div class="introduccion colorFondo">
-                <h1 class="titulo text-center">Servicio Militar Voluntario</h1>
+              <div class="row">
                 <p class="parrafo text-center">Personal que se incorpora a la fuerza bajo el régimen de Incorporación por Periodo Determiando (IPD), para desempeñar funciones operativas y de servicios en los distintos destinos, organismos o dependencias de la Ejercito</p>
-                
-                <p class="parrafo frase">"Forjando el Futuro con Honor y Sacrificio"</p>
-            </div>
-        </section>
+              </div>
+            </div> 
+            <p class="parrafo frase">"Forjando el Futuro con Honor y Sacrificio"</p>
+        </div>
+    </section>
+    </div>
         <section>
             <div class="container">
                <div class="row">
@@ -92,14 +62,14 @@
                   <p class="parrafo pfinalidad d-flex justify-content-center aling-items-start">El Servicio Militar Voluntario es la prestación que efectúan por propia decisión los argentinos varones o mujeres, nativos, por opción o ciudadanos naturalizados, con la finalidad de cubrir los requerimientos de personal de soldados de las unidades de combate, dependencias y organismos del Ejercito.</p>
                 </div>
                 <div class="col-md-6">
-                  <img class="estrategia h-100 w-100" src="./assets/img/estrategia.jpg" alt="finalidad">
+                  <img class="estrategia h-100 w-100 img-fluid imagen" src="./assets/img/estrategia.jpg" alt="finalidad">
                 </div>
               </div>
             </div>
             <div class="container">
                 <div class="row">
                   <div class="col-md-6">
-                    <img class="Narma w-100 h-100" src="./assets/img/nostra_arma.jpg" alt="nuestro arma">
+                    <img class="Narma imagen w-100 h-100 img-fluid" src="./assets/img/nostra_arma.jpg" alt="nuestro arma">
                   </div>
                   <div class="col-md-6">
                     <h3 class="subtitulo d-flex justify-content-center aling-items-center hArma">Nuestro arma</h3>
@@ -126,8 +96,8 @@
                     <p class="parrafo ol">Certificación de la capacidad laboral u oficio adquirido durante su permanencia en servicio. Los años de Servicio Militar Voluntario serán bonificables para el cómputo de los años de jubilación.</p>
                   </ul>
                 </div>
-                <div class="col-md-6">
-                  <img class="bandera w-100 h-100" src="./assets/img/formacion2.jpg" alt="formacion2">
+                <div class="col-md-6 text-center imagen">
+                  <img class="bandera imagen w-100 h-100 img-fluid" src="./assets/img/formacion2.jpg" alt="formacion2">
                 </div>
               </div>
             </div>
@@ -143,8 +113,8 @@
             <a href="./pages/requisitos.html">Requisitos de ingreso</a>
         </button>
         </div>
-    </main> 
-    <footer class="pie">
+  </main> 
+  <footer class="pie">
         <div class="container d-flex">
             <div class="iconos justify-content-around">
                 <a href="https://web.whatsapp.com">
@@ -161,10 +131,10 @@
                 &copy; 2023 Batallón de Ingenieros de Montaña 6. Todos los derechos reservados.
             </div>
         </div>
-    </footer>
+  </footer>
 
 
 
-    <link rel="stylesheet" href="./js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="./js/bootstrap.bundle.min.js">
 </body>
 </html>
