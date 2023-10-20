@@ -1,0 +1,19 @@
+.titulo{
+    font-family: $fuente-titulo, serif;
+    font-size: 3rem;
+    color: map-get($mapa-colores,color-letra);
+}
+
+.subtitulo{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 2rem;
+    color: map-get($mapa-colores,color-letra);
+}
+
+.parrafo{
+    margin: auto;
+    font-family: 'Neuton', serif;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: map-get($mapa-colores,color-letra);
+}

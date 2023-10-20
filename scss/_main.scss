@@ -1,0 +1,83 @@
+.main{
+    background-color: #556B2F;
+    .primera{
+        height: 100vh;
+        .flexible{
+            @include contenedorFlexible(row)
+        }  
+    }
+    
+    .introduccion{
+        height: 100vh;
+        /*background-image: url(../assets/img/formacion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px;
+        position: relative;*/
+        background-image: linear-gradient(to bottom, #000000fa #000000), url("./assets/img/formacion.jpg")
+    }
+    .titulo{
+        margin-top: 20px;
+        
+    }
+    .parrafo{
+        margin-top: 200px;
+        
+    }
+    .finalidad{
+       margin: 20px;
+    }
+    .pfinalidad{
+        margin: 20px;
+    }
+    .estrategia{
+        background-size: cover;
+        padding-left: 90px;
+    }
+    .Narma{
+        background-size: cover;
+        padding-right: 90px;
+    }
+    .hArma{
+        margin-top: 20px;
+    }
+    
+    .ol{
+        margin: 20px;
+        color:map-get($mapa-colores,color-letra);
+    }
+    .bandera{
+        background-size: cover;
+        padding-left: 90px;
+    }
+    .final{
+        margin-top: 150px;
+    }
+    .boton{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        background-color: #8B4513;
+        color: #fff; /* Color del texto */
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        outline: none;
+        list-style: none;
+    }
+    .entrada2{
+        background-size: cover;
+        margin-top: auto;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .imagen{
+       justify-content: center;
+    }
+   }

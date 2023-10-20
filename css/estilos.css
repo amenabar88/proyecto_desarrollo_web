@@ -1,126 +1,156 @@
-/*fuente de la pagina*/
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;800&family=Hind+Vadodara:wght@400;700&family=Neuton:wght@300;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;800&family=Hind+Vadodara:wght@400;700&family=Neuton:wght@300;700&display=swap");
+.titulo {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  color: #F5DEB3;
 }
 
-
-
-
-.cabecera{ /*header*/
-    width: 100vh;
-    background-color: #333333; /* Fondo */
-    color: #F5F5DC; /* Texto y elementos de navegación */
-    .contenedorLogo{
-        padding-left: 20px;
-        .escudo{
-            width: 125px;
-        }
-    }
-    .vistaEscritorio{
-        display: block;
-     }
-    .vistaMobile{
-        display: none;
-    }
-    
-    .listaNav{/*ul*/
-        text-align: right;
-        font-style: none;
-        .listaItem{/*li*/
-            display: inline-block;
-            .nav{/*a*/
-                display: inline-block;
-                text-decoration: none;
-                color: white;
-                font-size: 1.5rem;
-                margin-right: 20px;
-            }
-        }
-        }
-    }    
-
-    .main{
-        background-color: #F5F5DC; /* Fondo principal */
-        color: #000000; /* Texto principal */
-        .primeraimagen{
-            max-height: 825px;
-            min-height: 500px;
-            height: auto;
-            background-color: rgba(0, 128, 17, 0.749);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            .titulo{
-                display: inline-block;
-                text-align: center;
-            }
-            .nuestroarma{
-                .parrafo{
-                    font-size: 1.5rem;
-                }
-            }
-            }
-        }
-        .boton{
-            text-decoration: none; /*no conseguí sacarle la decoración a los botones para ponerle otro color :(*/
-        }
-
-
-    .footer{
-            display: flex;
-            flex-direction: row;
-            font-size: 0.8rem;
-            bottom: 0;
-            background-color: #333333; /* Fondo */
-            color: #F5F5DC; /* Texto y enlaces */
-     }
-
-
- .titulo{
-    display: inline-block;
-
-    font-family: 'Frank Ruhl Libre', serif;
-    font-size: 3rem;
- }
-
- .subtitulo{
-    font-family: 'Hind Vadodara', sans-serif;
-    font-size: 2rem;
- }
-
- .parrafo{
-    font-family: 'Neuton', serif;
-    font-size: 1.5rem;
-    line-height: 1.5em;
- }
-
-.footer1{
-    font-size: 0.8rem;
-    position: fixed;
-    bottom: 0;
-    background-color: #333333; /* Fondo */
-    color: #F5F5DC; /* Texto y enlaces */
-} 
-.footer{
-    font-size: 0.8rem;
-    bottom: 0;
-    background-color: #333333; /* Fondo */
-    color: #F5F5DC; /* Texto y enlaces */
+.subtitulo {
+  font-family: "Hind Vadodara", sans-serif;
+  font-size: 2rem;
+  color: #F5DEB3;
 }
 
-
-
-@media screen and (max-width: 768px){
-    .vistaEscritorio{
-        display: none;
-    }
-    .vistaMobile{
-        display: flex;
-        flex-direction: column;
-    }
+.parrafo {
+  margin: auto;
+  font-family: "Neuton", serif;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  color: #F5DEB3;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabecera { /*header*/
+  width: 100%;
+  background-color: #333333; /* Fondo */
+  color: #F5F5DC; /* Texto y elementos de navegación */
+}
+.cabecera .contenedorLogo {
+  padding-left: 20px;
+}
+.cabecera .contenedorLogo .escudo {
+  width: 125px;
+}
+.cabecera .contenedorLogo .listaNav { /*ul*/
+  text-align: right;
+  font-style: none;
+}
+.cabecera .contenedorLogo .listaNav .listaItem { /*li*/
+  display: inline-block;
+}
+.cabecera .contenedorLogo .listaNav .listaItem .nav { /*a*/
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorLogo {
+    display: none;
+  }
+  .frase {
+    display: none;
+  }
+}
+.main {
+  background-color: #556B2F;
+}
+.main .primera {
+  height: 100vh;
+}
+.main .primera .flexible {
+  display: flex;
+  flex-direction: row;
+}
+.main .introduccion {
+  height: 100vh;
+  /*background-image: url(../assets/img/formacion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  position: relative;*/
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9803921569) #000000), url("./assets/img/formacion.jpg");
+}
+.main .titulo {
+  margin-top: 20px;
+}
+.main .parrafo {
+  margin-top: 200px;
+}
+.main .finalidad {
+  margin: 20px;
+}
+.main .pfinalidad {
+  margin: 20px;
+}
+.main .estrategia {
+  background-size: cover;
+  padding-left: 90px;
+}
+.main .Narma {
+  background-size: cover;
+  padding-right: 90px;
+}
+.main .hArma {
+  margin-top: 20px;
+}
+.main .ol {
+  margin: 20px;
+  color: #F5DEB3;
+}
+.main .bandera {
+  background-size: cover;
+  padding-left: 90px;
+}
+.main .final {
+  margin-top: 150px;
+}
+.main .boton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #8B4513;
+  color: #fff; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+.main .entrada2 {
+  background-size: cover;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen {
+    justify-content: center;
+  }
+}
+.pie {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  bottom: 0;
+  background-color: #333333; /* Fondo */
+  color: #F5F5DC;
+}
+.pie .icono {
+  text-decoration: none;
+  margin-top: 30px;
+  color: gray;
+}
+.pie .derechos {
+  margin-top: 30px;
+}/*# sourceMappingURL=estilos.css.map */
