@@ -9,13 +9,12 @@
     
     .introduccion{
         height: 100vh;
-        /*background-image: url(../assets/img/formacion.jpg);
+        background-image: linear-gradient(to bottom, #000000fa #000000), url("../assets/img/formacion.jpg")
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 20px;
-        position: relative;*/
-        background-image: linear-gradient(to bottom, #000000fa #000000), url("./assets/img/formacion.jpg")
+        position: relative;
     }
     .titulo{
         margin-top: 20px;
@@ -77,6 +76,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .introduccion{
+        background-size: contain;
+    }
     .imagen{
        justify-content: center;
     }
